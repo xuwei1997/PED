@@ -4,6 +4,11 @@
 
 Plants have different phenotypes at different growth periods, and their corresponding images contain different semantics. A paradigm for contrastive learning of plant time-series images (CLPTI) is proposed to address the feature that plants have relatively fixed growth cycles. The method establishes a connection between plant phenological periods and image semantics, and trains encoder to extract information from plant images based on this. After contrast learning training, it can be used for supervised fine-tuning of information extraction models for single images in growth modeling studies, and can be migrated to other downstream tasks.
 
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
+![img_4.png](img_4.png)
+
 ## Requirement
 - python = 3.6
 - tensorflow = 1.8.0
@@ -450,3 +455,9 @@ Plants have different phenotypes at different growth periods, and their correspo
   </td>
  </tr>
 </table>
+
+## Figure
+
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
