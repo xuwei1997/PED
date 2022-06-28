@@ -1,15 +1,15 @@
-#a paradigm for contrastive learning of plant time-series images (CLPTI)
+# a paradigm for contrastive learning of plant time-series images (CLPTI)
 
 ## Introduction
 
 Plants have different phenotypes at different growth periods, and their corresponding images contain different semantics. A paradigm for contrastive learning of plant time-series images (CLPTI) is proposed to address the feature that plants have relatively fixed growth cycles. The method establishes a connection between plant phenological periods and image semantics, and trains encoder to extract information from plant images based on this. After contrast learning training, it can be used for supervised fine-tuning of information extraction models for single images in growth modeling studies, and can be migrated to other downstream tasks.
 
-##Requirement
+## Requirement
 - python = 3.6
 - tensorflow = 1.8.0
 - Keras = 2.1.6
 
-##Result
+## Result
 
 <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=610
  style='width:457.8pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
