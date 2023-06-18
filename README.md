@@ -1,10 +1,10 @@
-# a paradigm for contrastive learning of plant time-series images (CLPTI)
-
+# Image Segmentation with Contrastive Learning for Plant Time-series Images with Priori Distance Embedding
 ## Introduction
 
-Plants have different phenotypes at different growth periods, and their corresponding images contain different semantics. A paradigm for contrastive learning of plant time-series images (CLPTI) is proposed to address the feature that plants have relatively fixed growth cycles. The method establishes a connection between plant phenological periods and image semantics, and trains encoder to extract information from plant images based on this. After contrast learning training, it can be used for supervised fine-tuning of information extraction models for single images in growth modeling studies, and can be migrated to other downstream tasks.
+Current plant phenotyping studies have focused extensively on plant time-series image studies utilizing deep learning. Such study images are easier to obtain but costly to annotate, and contrast learning is one method for efficient label training. The growth of plants is slow, their image sequences change little over time, and their semantic information is simple. Previous contrast pre-training models struggle to distinguish between positive samples from different enhanced views of the same image and similar negative samples from different images. For this reason, this paper proposes a contrastive learning method with a priori distance embedding (PDE) for plant time-series images. Different phenological stages of plants correspond to different semantic information in the images. The method converts this essential domain knowledge into a priori distances between image pairs and performs comparative learning pre-training; the weights can then be transferred to the semantic segmentation task. Based on this method, the results of experiments on time-series images of cherries demonstrate that the PDE comparative learning method can be effectively applied to the pre-training of semantic segmentation of plant time-series images, and has a wide range of potential applications in computer vision plant phenotypic research.
 
-![img_1.png](img_1.png)
+
+![img_8.png](img_8.png)
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
 ![img_4.png](img_4.png)
@@ -350,7 +350,7 @@ Plants have different phenotypes at different growth periods, and their correspo
   mso-border-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
   <p class=MsoNormal align=right style='text-align:right;mso-pagination:widow-orphan'><span
   lang=EN-US style='font-size:11.0pt;font-family:"Times New Roman",serif;
-  mso-fareast-font-family:等线;mso-font-kerning:0pt'>0.736<o:p></o:p></span></p>
+  mso-fareast-font-family:等线;mso-font-kerning:0pt'>0.716<o:p></o:p></span></p>
   </td>
  </tr>
  <tr style='mso-yfti-irow:8;height:14.0pt'>
@@ -409,7 +409,7 @@ Plants have different phenotypes at different growth periods, and their correspo
   padding:0cm 5.4pt 0cm 5.4pt;height:14.0pt'>
   <p class=MsoNormal align=left style='text-align:left;mso-pagination:widow-orphan'><span
   lang=EN-US style='font-size:11.0pt;font-family:"Times New Roman",serif;
-  mso-fareast-font-family:等线;mso-font-kerning:0pt'>CLPTI (classification
+  mso-fareast-font-family:等线;mso-font-kerning:0pt'>PDE (classification
   distance)<o:p></o:p></span></p>
   </td>
   <td width=205 nowrap valign=top style='width:153.75pt;border-top:none;
@@ -461,3 +461,6 @@ Plants have different phenotypes at different growth periods, and their correspo
 ![img_5.png](img_5.png)
 ![img_6.png](img_6.png)
 ![img_7.png](img_7.png)
+
+## dir
+1.
