@@ -462,5 +462,23 @@ Current plant phenotyping studies have focused extensively on plant time-series 
 ![img_6.png](img_6.png)
 ![img_7.png](img_7.png)
 
-## dir
-1.
+## 文件目录
+1. data_processing 数据预处理
+2. growth_modeling 简单的数据建模
+3. nets 主干网络
+4. PDE_self_supervised PDE算法
+5. other_ssl 其他自监督方法用于对比实验
+5. utils 训练相关
+6. train.py 下游Unet训练
+7. unet.py unet网络主干
+8. predict.py 利用训练好的unet进行预测
+9. get_miou.py 获取测试集miou
+10. visualize.py 可视化
+
+# 运行步骤
+1. 在.\data_processing\date_pro.py中填写先验物候期
+2. 运行.\data_processing\select_img.py，按摄像头号、预置点、时间选择实验图像，并全部复制到文件夹out
+2. 运行.\data_processing\make_dataset.py，按文件名两两配对生成图像对
+3. .\PDE_self_supervised\con_train_resnet.py PDE分级距离预训练
+4. .\PDE_self_supervised\con_train_resnet_class.py PDE分类距离预训练
+5. train.py 迁移预训练主干进行下游任务
